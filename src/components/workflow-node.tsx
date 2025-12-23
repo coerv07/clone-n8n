@@ -1,0 +1,48 @@
+import { NodeToolbar, Position } from '@xyflow/react';
+import { Button } from './ui/button';
+import { SettingsIcon, TrashIcon } from 'lucide-react';
+
+interface WokflowNodePorps {
+  children: React.ReactNode;
+  showToolbar?: boolean;
+  onDelete?: () => void;
+  onSettings?: () => void;
+  name?: string;
+  description?: string;
+}
+export function WorkflowNode({
+  children,
+  showToolbar = true,
+  onDelete,
+  onSettings,
+  name,
+  description,
+}: WokflowNodePorps) {
+  return (
+    <>
+      {showToolbar && (
+        <NodeToolbar>
+          <Button size="sm" variant={'ghost'} onClick={onSettings}>
+            <SettingsIcon className="size-4" />
+          </Button>
+          <Button size="sm" variant={'ghost'} onClick={onSettings}>
+            <TrashIcon className="size-4" />
+          </Button>
+        </NodeToolbar>
+      )}
+      {children}
+      {name && (
+        <NodeToolbar
+          position={Position.Bottom}
+          isVisible
+          className="max-w[200] text-center"
+        >
+          <p className="font-medium">{name}</p>
+          {description && (
+            <p className="text-sm text-muted-foreground">{description}</p>
+          )}
+        </NodeToolbar>
+      )}
+    </>
+  );
+}
