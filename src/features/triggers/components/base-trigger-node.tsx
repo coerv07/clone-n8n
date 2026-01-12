@@ -29,14 +29,18 @@ export const BaseTriggerNode = memo(
     const { setNodes, setEdges } = useReactFlow();
 
     const handleDelete = () => {
-      if (data.preventDelete) return; // trava o initial
+      setNodes((currentNodes) => {
+        const updateNodes = currentNodes.filter((node) => node.id !== id);
+        return updateNodes;
+      });
+      console.log('Deleting node id:', id);
 
-      setNodes((currentNodes) => currentNodes.filter((node) => node.id !== id));
-      setEdges((currentEdges) =>
-        currentEdges.filter((edge) => edge.source !== id && edge.target !== id),
-      );
-
-      console.log('Deleted node id:', id);
+      setEdges((currentEdges) => {
+        const updateEdges = currentEdges.filter(
+          (edge) => edge.source !== id && edge.target !== id,
+        );
+        return updateEdges;
+      });
     };
 
     return (
