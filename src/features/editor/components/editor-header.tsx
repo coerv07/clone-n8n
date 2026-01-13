@@ -1,18 +1,43 @@
-"use client";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { userUpdateWorflowName, useSupenseWorkflow } from "@/features/workflows/hooks/use-worflows";
-import { Edit, SaveIcon } from "lucide-react";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { set } from "zod";
+'use client';
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+} from '@/components/ui/breadcrumb';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { SidebarTrigger } from '@/components/ui/sidebar';
+import {
+  userUpdateWorflowName,
+  useSupenseWorkflow,
+  useUpdateWorkflow,
+} from '@/features/workflows/hooks/use-worflows';
+import { useAtomValue } from 'jotai';
+import { Edit, SaveIcon } from 'lucide-react';
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+import { set } from 'zod';
+import { editorAtom } from '../store/atoms';
 
 export const EditorSaveButton = ({ workflowId }: { workflowId: string }) => {
+  const editor = useAtomValue(editorAtom);
+  const saveWorkflow = useUpdateWorkflow();
+
+  const handleSave = async () => {
+    if (!editor) {
+      return;
+    }
+
+    const nodes = editor.getNodes();
+    const edges = editor.getEdges();
+    saveWorkflow.mutate({ id: workflowId, nodes, edges });
+  };
+
   return (
     <div className="ml-auto">
-      <Button size="sm" onClick={() => {}} disabled={false}>
+      <Button size="sm" onClick={handleSave} disabled={saveWorkflow.isPending}>
         <SaveIcon className="size-4" />
         Save
       </Button>
@@ -54,8 +79,8 @@ export const EditorNameInput = ({ workflowId }: { workflowId: string }) => {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") handleSave();
-    else if (e.key === "Escape") {
+    if (e.key === 'Enter') handleSave();
+    else if (e.key === 'Escape') {
       setName(workflow?.name);
       setIsEditing(false);
     }
@@ -77,7 +102,10 @@ export const EditorNameInput = ({ workflowId }: { workflowId: string }) => {
   }
 
   return (
-    <BreadcrumbItem onClick={() => setIsEditing(true)} className="cursor-pointer hover:text-foreground transition-colors">
+    <BreadcrumbItem
+      onClick={() => setIsEditing(true)}
+      className="cursor-pointer hover:text-foreground transition-colors"
+    >
       {workflow?.name}
     </BreadcrumbItem>
   );

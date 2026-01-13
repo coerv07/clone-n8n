@@ -11,7 +11,9 @@ export const InitialNode = memo((props: NodeProps) => {
   return (
     <NodeSelector open={selectorOpen} onOpenChange={setSelectorOpen}>
       <WorkflowNode name="Initial node" description="Click to add a node">
-        <PlaceholderNode {...props} onclick={() => setSelectorOpen(true)}>
+        <PlaceholderNode {...props} 
+        onclick={() => setSelectorOpen(true)}
+        >
           <div className="cursor-pointer flex items-center justify-center">
             <PlusIcon className="size-4" />
           </div>

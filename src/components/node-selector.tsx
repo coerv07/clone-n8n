@@ -15,8 +15,6 @@ import {
 import { Separator } from '@/components/ui/separator';
 import { useCallback } from 'react';
 import { toast } from 'sonner';
-import { set } from 'zod';
-import { se } from 'date-fns/locale';
 
 export type NodeTypeOption = {
   type: NodeType;
@@ -81,9 +79,13 @@ export function NodeSelector({
 
         const newNode = {
           id: createId(),
-          type: selection.type, // 👈 AGORA FUNCIONA PRA TODOS
+          type: selection.type,
           position: flowPosition,
-          data: {}, // depois você personaliza por tipo
+          data: {
+            name: selection.label, // nome do node
+            description: selection.description, // descrição
+            preventDelete: selection.type === NodeType.MANUAL_TRIGGER, // trava o initial
+          },
         };
 
         return [...nodes, newNode];
