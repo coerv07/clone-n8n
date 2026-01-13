@@ -1,19 +1,32 @@
-import { NodeProps } from '@xyflow/react';
-import { memo } from 'react';
-import { BaseTriggerNode } from '../base-trigger-node';
-import { MousePointerIcon } from 'lucide-react';
+'use client';
 
-export const ManualTriggerNode = memo((pros: NodeProps) => {
+import { NodeProps } from '@xyflow/react';
+import { memo, useState } from 'react';
+import { MousePointerIcon } from 'lucide-react';
+import { ManualTriggerDialog } from './dialog';
+import { BaseTriggerNode } from '../base-trigger-node';
+
+export const ManualTriggerNode = memo((props: NodeProps) => {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
+  const nodeStatus = 'initial';
+
+
+  const handleOpenSettings = () => {
+    setDialogOpen(true);
+  };
+
   return (
     <>
+      <ManualTriggerDialog open={dialogOpen} onOpenChange={setDialogOpen} />
+
       <BaseTriggerNode
-        {...pros}
+        {...props}
         icon={MousePointerIcon}
         name="Manual Trigger"
         description="Triggers the workflow manually"
-        //status = {NodeStatus}
-        //onSettings={handleOpenSettings}
-        
+        status={nodeStatus}
+        onSettings={handleOpenSettings}
       />
     </>
   );

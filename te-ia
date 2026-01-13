@@ -1,0 +1,82 @@
+[33mfe621ce[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mtemp-ajuste-ia[m[33m, [m[1;32mfeature/Editor-State[m[33m)[m HEAD@{0}: checkout: moving from feature/Editor-State to temp-ajuste-ia
+[33mfe621ce[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mtemp-ajuste-ia[m[33m, [m[1;32mfeature/Editor-State[m[33m)[m HEAD@{1}: commit: Backup antes da IA
+[33m79347ed[m HEAD@{2}: commit: Backup antes da IA
+[33mc9b069b[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{3}: checkout: moving from develop to feature/Editor-State
+[33mc9b069b[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{4}: merge feature/node_selector: Fast-forward
+[33mc85baad[m HEAD@{5}: checkout: moving from feature/node_selector to develop
+[33mc9b069b[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{6}: commit: feat: add base trigger node and manual trigger node component
+[33mc85baad[m HEAD@{7}: checkout: moving from develop to feature/node_selector
+[33mc85baad[m HEAD@{8}: merge feature/EditorSetup: Merge made by the 'ort' strategy.
+[33mf9568e2[m[33m ([m[1;31mupstream/develop[m[33m)[m HEAD@{9}: checkout: moving from feature/EditorSetup to develop
+[33meed5f92[m HEAD@{10}: commit: feat: adicioando os primeiros node components e botao para adicionar nodes no editor
+[33mad5a0af[m HEAD@{11}: commit (amend): Date: Tue Dec 16 08:16:31 2025 -0300
+[33m31e9089[m HEAD@{12}: commit (amend): Date: Tue Dec 16 08:16:31 2025 -0300
+[33mbb9b1a5[m HEAD@{13}: commit (amend): Date: Tue Dec 16 08:16:31 2025 -0300
+[33m693e572[m HEAD@{14}: reset: moving to HEAD
+[33m693e572[m HEAD@{15}: commit (amend): feat: adicionei a funcao que chama seta o 'setnodes' para conectar junto com o workflow.node,
+[33m9cc2035[m HEAD@{16}: commit: feat: adicionei a funcao que chama seta o 'setnodes' para conectar junto com o workflow.node,
+[33mf9568e2[m[33m ([m[1;31mupstream/develop[m[33m)[m HEAD@{17}: checkout: moving from develop to feature/EditorSetup
+[33mf9568e2[m[33m ([m[1;31mupstream/develop[m[33m)[m HEAD@{18}: rebase (finish): returning to refs/heads/develop
+[33mf9568e2[m[33m ([m[1;31mupstream/develop[m[33m)[m HEAD@{19}: rebase (start): checkout upstream/develop
+[33mc6371f6[m HEAD@{20}: checkout: moving from main to develop
+[33m65fce45[m[33m ([m[1;33mtag: [m[1;33m1.0.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{21}: checkout: moving from develop to main
+[33mc6371f6[m HEAD@{22}: checkout: moving from main to develop
+[33m65fce45[m[33m ([m[1;33mtag: [m[1;33m1.0.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{23}: checkout: moving from develop to main
+[33mc6371f6[m HEAD@{24}: merge 1.0.0: Merge made by the 'ort' strategy.
+[33md72fd83[m HEAD@{25}: checkout: moving from main to develop
+[33m65fce45[m[33m ([m[1;33mtag: [m[1;33m1.0.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{26}: checkout: moving from main to main
+[33m65fce45[m[33m ([m[1;33mtag: [m[1;33m1.0.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{27}: merge release/1.0.0: Merge made by the 'ort' strategy.
+[33mc3adb57[m HEAD@{28}: checkout: moving from release/1.0.0 to main
+[33md72fd83[m HEAD@{29}: checkout: moving from develop to release/1.0.0
+[33md72fd83[m HEAD@{30}: merge feature/MigrationDb: Merge made by the 'ort' strategy.
+[33m2acf94c[m HEAD@{31}: checkout: moving from feature/MigrationDb to develop
+[33ma747000[m HEAD@{32}: commit: migrando db
+[33m69ead69[m HEAD@{33}: Branch: renamed refs/heads/feature/Editor to refs/heads/feature/MigrationDb
+[33m69ead69[m HEAD@{35}: checkout: moving from develop to feature/Editor
+[33m2acf94c[m HEAD@{36}: reset: moving to HEAD
+[33m2acf94c[m HEAD@{37}: checkout: moving from feature/Editor to develop
+[33m69ead69[m HEAD@{38}: checkout: moving from develop to feature/Editor
+[33m2acf94c[m HEAD@{39}: checkout: moving from main to develop
+[33mc3adb57[m HEAD@{40}: checkout: moving from feature/Editor to main
+[33m69ead69[m HEAD@{41}: commit: adicionado o setting.json
+[33m5b5aaa1[m HEAD@{42}: commit: adicionado o prettierrc
+[33m2acf94c[m HEAD@{43}: checkout: moving from develop to feature/Editor
+[33m2acf94c[m HEAD@{44}: reset: moving to 2acf94c
+[33m2acf94c[m HEAD@{45}: checkout: moving from 2acf94cb48f53f3d1917ed9aee243a87047e2fac to develop
+[33m2acf94c[m HEAD@{46}: checkout: moving from develop to 2acf94c
+[33m2acf94c[m HEAD@{47}: checkout: moving from develop to develop
+[33m2acf94c[m HEAD@{48}: checkout: moving from feature/Editor to develop
+[33m2acf94c[m HEAD@{49}: checkout: moving from develop to feature/Editor
+[33m2acf94c[m HEAD@{50}: checkout: moving from 2acf94cb48f53f3d1917ed9aee243a87047e2fac to develop
+[33m2acf94c[m HEAD@{51}: checkout: moving from develop to 2acf94c
+[33m2acf94c[m HEAD@{52}: checkout: moving from 2acf94cb48f53f3d1917ed9aee243a87047e2fac to develop
+[33m2acf94c[m HEAD@{53}: checkout: moving from develop to 2acf94c
+[33m2acf94c[m HEAD@{54}: checkout: moving from main to develop
+[33mc3adb57[m HEAD@{55}: checkout: moving from develop to main
+[33m2acf94c[m HEAD@{56}: reset: moving to HEAD
+[33m2acf94c[m HEAD@{57}: checkout: moving from develop to develop
+[33m2acf94c[m HEAD@{58}: checkout: moving from develop to develop
+[33m2acf94c[m HEAD@{59}: checkout: moving from feature/Editor to develop
+[33m2acf94c[m HEAD@{60}: checkout: moving from develop to feature/Editor
+[33m2acf94c[m HEAD@{61}: merge feature/workflowPage: Fast-forward
+[33m5001849[m HEAD@{62}: checkout: moving from feature/workflowPage to develop
+[33m2acf94c[m HEAD@{63}: commit: finalizando o workflowPage
+[33m5001849[m HEAD@{64}: checkout: moving from develop to feature/workflowPage
+[33m5001849[m HEAD@{65}: checkout: moving from feature/workflowsUi to develop
+[33m5001849[m HEAD@{66}: checkout: moving from develop to feature/workflowsUi
+[33m5001849[m HEAD@{67}: merge feature/workflowsUi: Merge made by the 'ort' strategy.
+[33m0363141[m HEAD@{68}: checkout: moving from feature/workflowsUi to develop
+[33mf7e08b8[m HEAD@{69}: commit: finalizando o workflowsUi
+[33mfc45510[m HEAD@{70}: checkout: moving from develop to feature/workflowsUi
+[33m0363141[m HEAD@{71}: reset: moving to origin/develop
+[33mfc45510[m HEAD@{72}: checkout: moving from feature/workflowsUi to develop
+[33mfc45510[m HEAD@{73}: reset: moving to fc4551052819c737dfde050357f60ad5dfa2955c
+[33mfc45510[m HEAD@{74}: checkout: moving from develop to feature/workflowsUi
+[33mfc45510[m HEAD@{75}: checkout: moving from feature/workflowsUi to develop
+[33mfc45510[m HEAD@{76}: checkout: moving from develop to feature/workflowsUi
+[33mfc45510[m HEAD@{77}: commit: deploy
+[33m0363141[m HEAD@{78}: checkout: moving from develop to develop
+[33m0363141[m HEAD@{79}: checkout: moving from main to develop
+[33mc3adb57[m HEAD@{80}: checkout: moving from develop to main
+[33m0363141[m HEAD@{81}: checkout: moving from main to develop
+[33mc3adb57[m HEAD@{82}: clone: from https://github.com/coerv07/clone-n8n.git
